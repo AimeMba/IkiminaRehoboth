@@ -1,0 +1,49 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-info">
+      <div class="inner">
+        <h3>{{ total_members }}</h3>
+        <p>Members</p>
+      </div>
+      <div class="icon"><i class="fas fa-users"></i></div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-success">
+      <div class="inner">
+        <h3>{{ total_savings }} RWF</h3>
+        <p>Total Savings</p>
+      </div>
+      <div class="icon"><i class="fas fa-piggy-bank"></i></div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-warning">
+      <div class="inner">
+        <h3>{{ total_loans }} RWF</h3>
+        <p>Total Loans</p>
+      </div>
+      <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-danger">
+      <div class="inner">
+        <h3>{{ unpaid_loans }}</h3>
+        <p>Unpaid Loans</p>
+      </div>
+      <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+    </div>
+  </div>
+
+</div>
+{{ block.super }}
+{% endblock %}

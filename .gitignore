@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+pvenv/
+venv/
+env/
+.venv/
+
+# Django
+*.log
+db.sqlite3
+staticfiles/
+media/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+
+# Old frontend
+frontend_old/node_modules/
+frontend_old/dist/
+
+# Database backups
+DB/*.sql
+DB/*.dump
+DB/*.backup
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.dbDB/*.csv
+frontend_old/
+material-dashboard-react-main.zip
+
+# Project documentation / private documents
+*.docx
+*.pdf
+README.txt
+
+# Development/reference pictures
+DEVPICTURE/
+
+# Old frontend / archived code
+frontend_old/
+
+# Large archive files
+*.zip
+
+# Database files and sensitive exported data
+DB/
